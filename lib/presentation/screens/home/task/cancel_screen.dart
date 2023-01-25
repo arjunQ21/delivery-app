@@ -102,7 +102,7 @@ class _CancelScreenState extends State<CancelScreen> {
       _formKey.currentState.reset();
       Navigator.pop(context, "DELIVERY_FAILURE");
     } catch (error) {
-      _scaffoldKey.currentState.showSnackBar(SnackBar(
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
         content: Text(
           "Sorry, could not cancel the order. Please try again!",
           textAlign: TextAlign.center,
@@ -183,12 +183,12 @@ class _CancelScreenState extends State<CancelScreen> {
               Spacer(),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: RaisedButton(
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 10, horizontal: 30),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0)),
-                    color: LendenAppTheme.redColor,
+                child: ElevatedButton(
+                    // padding: const EdgeInsets.symmetric(
+                    //     vertical: 10, horizontal: 30),
+                    // shape: RoundedRectangleBorder(
+                    //     borderRadius: BorderRadius.circular(10.0)),
+                    // color: LendenAppTheme.redColor,
                     child: _isLoading
                         ? const SizedBox(
                             height: 24,

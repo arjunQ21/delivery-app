@@ -190,7 +190,7 @@ class _LoginScreenState extends State<LoginScreen> {
         _isLoading = false;
       });
       //show error snack bar
-      _scaffoldKey.currentState.showSnackBar(
+      ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(
             "Sorry, couldn't login! " + error.toString(),

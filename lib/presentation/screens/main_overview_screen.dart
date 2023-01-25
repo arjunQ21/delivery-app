@@ -164,16 +164,16 @@ class _MainOverviewScreenState extends State<MainOverviewScreen>
               style: _themeConst.textTheme.caption.copyWith(fontSize: 15),
             ),
             actions: <Widget>[
-              FlatButton(
-                color: LendenAppTheme.greenColor,
+              TextButton(
+                // color: LendenAppTheme.greenColor,
                 onPressed: () {
                   Navigator.of(dCtx).pop();
                   Navigator.of(context).pop();
                 },
                 child: Text('Yes'),
               ),
-              FlatButton(
-                color: LendenAppTheme.redColor,
+              TextButton(
+                // color: LendenAppTheme.redColor,
                 onPressed: () => Navigator.of(dCtx).pop(false),
                 child: Text('No'),
               ),
@@ -266,7 +266,7 @@ class _MainOverviewScreenState extends State<MainOverviewScreen>
                   borderRadius: BorderRadius.circular(15)),
               title: Text("Are you sure to logout?"),
               actions: [
-                FlatButton(
+                TextButton(
                     onPressed: () async {
                       await Provider.of<RiderProvider>(context, listen: false)
                           .stopLocationUpdate();
@@ -276,13 +276,13 @@ class _MainOverviewScreenState extends State<MainOverviewScreen>
                       Navigator.pushReplacementNamed(
                           sCtx, LoginScreen.routeName);
                     },
-                    color: LendenAppTheme.greenColor,
+                    // color: LendenAppTheme.greenColor,
                     child: Text("Yes")),
-                FlatButton(
+                TextButton(
                     onPressed: () {
                       Navigator.pop(dCtx);
                     },
-                    color: LendenAppTheme.redColor,
+                    // color: LendenAppTheme.redColor,
                     child: Text("No")),
               ],
             ));
@@ -537,7 +537,7 @@ class _MainOverviewScreenState extends State<MainOverviewScreen>
                     ),
                     Container(
                       width: double.infinity,
-                      child: FlatButton(
+                      child: TextButton(
                         onPressed: () async {
                           if (userStatus == Status.Online) {
                             ///disconnect from socket
@@ -560,9 +560,9 @@ class _MainOverviewScreenState extends State<MainOverviewScreen>
                           style: _themeConst.textTheme.subtitle2.copyWith(
                               color: Colors.white, fontWeight: FontWeight.w400),
                         ),
-                        color: userStatus == Status.Online
-                            ? LendenAppTheme.redColor
-                            : LendenAppTheme.greenColor,
+                        // color: userStatus == Status.Online
+                        //     ? LendenAppTheme.redColor
+                        //     : LendenAppTheme.greenColor,
                       ),
                     )
                   ],

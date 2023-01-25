@@ -20,12 +20,12 @@ class TaskButtons extends StatelessWidget {
         const Spacer(),
         Padding(
           padding: const EdgeInsets.all(8.0),
-          child: RaisedButton(
-              padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 30),
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10.0)),
-              color: btnColor,
-              disabledColor: LendenAppTheme.deactivatedText,
+          child: ElevatedButton(
+              // padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 30),
+              // shape: RoundedRectangleBorder(
+              //     borderRadius: BorderRadius.circular(10.0)),
+              // color: btnColor,
+              // disabledColor: LendenAppTheme.deactivatedText,
               child: Container(
                 alignment: Alignment.center,
                 child: isLoading

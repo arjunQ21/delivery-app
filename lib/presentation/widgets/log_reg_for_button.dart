@@ -15,10 +15,10 @@ class LogRegForButton extends StatelessWidget {
 // =========================== Build Function ===========================
   @override
   Widget build(BuildContext context) {
-    return RaisedButton(
+    return ElevatedButton(
       onPressed: showProgress ? null : onTap,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(80.0)),
-      padding: const EdgeInsets.all(0.0),
+      // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(80.0)),
+      // padding: const EdgeInsets.all(0.0),
       child: Ink(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.all(Radius.circular(5)),

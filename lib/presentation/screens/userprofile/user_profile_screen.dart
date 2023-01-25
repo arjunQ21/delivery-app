@@ -79,7 +79,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
         builder: (dCtx) => AlertDialog(
               title: Text("Are you sure to logout?"),
               actions: [
-                FlatButton(
+                TextButton(
                     onPressed: () async {
                       await Provider.of<AuthProvider>(context, listen: false)
                           .logout();
@@ -88,7 +88,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                           sCtx, LoginScreen.routeName);
                     },
                     child: Text("Yes")),
-                FlatButton(
+                TextButton(
                     onPressed: () {
                       Navigator.pop(dCtx);
                     },

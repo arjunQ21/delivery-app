@@ -94,11 +94,11 @@ class _StartPickupDialogState extends State<StartPickupDialog> {
                     : Row(
                         children: [
                           Expanded(
-                            child: FlatButton(
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.zero),
-                              padding: const EdgeInsets.all(0),
-                              color: LendenAppTheme.greenColor,
+                            child: TextButton(
+                              // shape: RoundedRectangleBorder(
+                              //     borderRadius: BorderRadius.zero),
+                              // padding: const EdgeInsets.all(0),
+                              // color: LendenAppTheme.greenColor,
                               onPressed: _updateStatus,
                               child: Text(
                                 "Yes",
@@ -108,15 +108,15 @@ class _StartPickupDialogState extends State<StartPickupDialog> {
                             ),
                           ),
                           Expanded(
-                            child: FlatButton(
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.zero),
-                              padding: const EdgeInsets.all(0),
-                              color: LendenAppTheme.redColor,
+                            child: TextButton(
+                              // shape: RoundedRectangleBorder(
+                              //     borderRadius: BorderRadius.zero),
+                              // padding: const EdgeInsets.all(0),
+                              // color: LendenAppTheme.redColor,
                               onPressed: () {
                                 Navigator.pop(widget.buildContext, false);
                               },
-                              textColor: Colors.white,
+                              // textColor: Colors.white,
                               child: Text(
                                 "No",
                                 style: widget.themeConst.textTheme.subtitle2

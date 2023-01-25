@@ -97,7 +97,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    FlatButton(
+                    TextButton(
                       onPressed: () async {
                         if (_controller.isNotEmpty) {
                           final Uint8List data = await _controller.toPngBytes();
@@ -110,9 +110,9 @@ class _PaymentScreenState extends State<PaymentScreen> {
                         style: _themeConst.textTheme.subtitle2.copyWith(
                             color: Colors.white, fontWeight: FontWeight.w400),
                       ),
-                      color: LendenAppTheme.greenColor,
+                      // color: LendenAppTheme.greenColor,
                     ),
-                    FlatButton(
+                    TextButton(
                       onPressed: () {
                         _controller.clear();
                         setState(() {
@@ -124,7 +124,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                         style: _themeConst.textTheme.subtitle2.copyWith(
                             color: Colors.white, fontWeight: FontWeight.w400),
                       ),
-                      color: LendenAppTheme.greenColor,
+                      // color: LendenAppTheme.greenColor,
                     )
                   ],
                 ),
@@ -154,7 +154,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
       _showCompleteDialog();
     } catch (error) {
       print(error);
-      widget.scaffoldKey.currentState.showSnackBar(SnackBar(
+     ScaffoldMessenger.of(context).showSnackBar(SnackBar(
         content: Text(
           "Sorry, couldnot proceed to update the order. Please try again!",
           textAlign: TextAlign.center,
@@ -205,7 +205,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
               ),
               Container(
                 width: double.infinity,
-                child: FlatButton(
+                child: TextButton(
                   onPressed: () {
                     Navigator.of(dCtx).pop();
                     Navigator.of(context).pop();
@@ -215,7 +215,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                     style: _themeConst.textTheme.subtitle2.copyWith(
                         color: Colors.white, fontWeight: FontWeight.w400),
                   ),
-                  color: LendenAppTheme.greenColor,
+                  // color: LendenAppTheme.greenColor,
                 ),
               )
             ],

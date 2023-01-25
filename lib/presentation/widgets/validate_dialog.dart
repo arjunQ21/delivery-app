@@ -153,10 +153,10 @@ class _ValidateDialogState extends State<ValidateDialog> {
                 },
               ),
             ),
-            RaisedButton(
-                color: LendenAppTheme.greenColor,
+            ElevatedButton(
+                // color: LendenAppTheme.greenColor,
                 onPressed: _isQR ? null : () => _scan(context),
-                textColor: Colors.white,
+                // textColor: Colors.white,
                 child: Container(
                   alignment: Alignment.center,
                   child: _isQR
@@ -170,15 +170,15 @@ class _ValidateDialogState extends State<ValidateDialog> {
                         )
                       : const Text('Scan QR'),
                 )),
-            RaisedButton(
-                color: LendenAppTheme.ratingColor,
-                disabledColor: LendenAppTheme.deactivatedText,
+            ElevatedButton(
+                // color: LendenAppTheme.ratingColor,
+                // disabledColor: LendenAppTheme.deactivatedText,
                 onPressed: _isLoading
                     ? null
                     : () async {
                         await _validateOrder(context);
                       },
-                textColor: Colors.white,
+                // textColor: Colors.white,
                 child: Container(
                   alignment: Alignment.center,
                   child: _isLoading

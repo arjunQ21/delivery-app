@@ -162,7 +162,7 @@ class _HomeOngoingDetailsScreenState extends State<HomeOngoingDetailsScreen> {
                     size: 25,
                   ),
             onPressed: () {
-              _scaffoldKey.currentState.showSnackBar(SnackBar(
+              ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                 content: Text(_priority == "HIGH"
                     ? "The Order Type is of Food with HIGH Priority"
                     : "The Order Type is of Normal with LOW Priority"),
