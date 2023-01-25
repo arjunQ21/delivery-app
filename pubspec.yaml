@@ -13,7 +13,7 @@ dependencies:
     sdk: flutter
   # ====================== Development Packages ======================
   # State management
-  provider: ^5.0.0
+  provider: ^6.0.5
   get_it: ^7.1.3
   # Remote API
   data_connection_checker: ^0.3.4
@@ -24,10 +24,10 @@ dependencies:
   # Testing
   mockito: ^5.0.13
   # Local cache
-  flutter_secure_storage: ^4.2.1
+  flutter_secure_storage: ^7.0.1
   shared_preferences: ^2.0.6
   # validation
-  email_validator: ^1.0.6
+  email_validator: ^2.1.17
   # launch
   flutter_appavailability:
     git:
@@ -37,7 +37,7 @@ dependencies:
   # intents
   url_launcher: ^6.0.9
   #geo location
-  geolocator: ^7.4.0
+  geolocator: ^9.0.2
   # maps
   google_maps_flutter: ^2.0.6
   # qr code
@@ -56,20 +56,20 @@ dependencies:
   # loading spinner
   flutter_spinkit: ^5.0.0
   # icons
-  font_awesome_flutter: ^9.1.0
+  font_awesome_flutter: ^10.3.0
   cupertino_icons: ^1.0.3
   # date
   intl: ^0.17.0
   # timeline
   timeline_tile: ^2.0.0
   # charts
-  charts_flutter: ^0.11.0
+  charts_flutter: ^0.12.0
   # splash
   flare_splash_screen: ^4.0.0
   # lottie
-  lottie: ^1.1.0
+  lottie: ^2.2.0
   # signature
-  signature: ^4.1.1
+  signature: ^5.3.0
   # save files
   path_provider: ^2.0.2
 
@@ -79,7 +79,7 @@ dev_dependencies:
     sdk: flutter
   # parsing json
   build_runner: ^2.1.0
-  json_serializable: ^4.1.0
+  json_serializable: ^6.6.0
 
 flutter:
   uses-material-design: true
